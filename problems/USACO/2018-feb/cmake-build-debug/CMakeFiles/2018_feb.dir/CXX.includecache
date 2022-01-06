@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/michael/Documents/比赛/USACO/真题/2018-feb/s-3.cpp
+iostream
+-
+fstream
+-
+string
+-
+cstring
+-
+queue
+-
+cmath
+-
+map
+-
+algorithm
+-
+

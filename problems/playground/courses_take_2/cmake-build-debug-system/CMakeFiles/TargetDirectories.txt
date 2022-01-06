@@ -1,0 +1,3 @@
+/Users/michael/Documents/比赛/USACO/练习/courses_take_2/cmake-build-debug-system/CMakeFiles/rebuild_cache.dir
+/Users/michael/Documents/比赛/USACO/练习/courses_take_2/cmake-build-debug-system/CMakeFiles/edit_cache.dir
+/Users/michael/Documents/比赛/USACO/练习/courses_take_2/cmake-build-debug-system/CMakeFiles/courses_take_2.dir

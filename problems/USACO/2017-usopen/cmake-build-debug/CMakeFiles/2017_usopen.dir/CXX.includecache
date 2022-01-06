@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/michael/Documents/比赛/USACO/真题/2017-usopen/s-3.cpp
+iostream
+-
+fstream
+-
+string
+-
+cstring
+-
+queue
+-
+set
+-
+cmath
+-
+map
+-
+algorithm
+-
+

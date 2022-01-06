@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g -Wl,--enable-auto-import CMakeFiles/2021_feb.dir/g-2-redo2.cpp.o -o 2021_feb.exe -Wl,--out-implib,lib2021_feb.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

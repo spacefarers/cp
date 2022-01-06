@@ -1,0 +1,39 @@
+## USACO 2021 December Contest, Platinum
+
+### Problem 1. Tickets
+
+Rather complicated problem involving segment tree on graphs.
+
+Supposedly great blog detailing how this could work. I’ll solve the related CF Problem first.
+
+Source: https://robert1003.github.io/2020/02/14/graphs-and-segment-tree.html
+
+#### D. Legacy
+
+Great Problem for demonstrating segment tree on graphs
+
+build the tree almost as normal, but instead of summing or minning, we will add edges.
+
+The specific problem with this problem is that there are two types of operations that we need to support, range to point and point to range, so we need separate nodes to support those operations.
+
+![legacy-0](/Users/michael/Documents/cp/records/20211225.assets/legacy-0.png)
+
+One type of segment tree nodes can only travel down, another can only traver “up” if the root is at the top.
+
+Then, we start connecting edges to those added nodes so that we don’t have to perform O(n) operations every single query. This improves it to O(logn).
+
+![legacy-1](/Users/michael/Documents/cp/records/20211225.assets/legacy-1.png)
+
+Then, we just run a dijkstra and we are done! I will now move on to the USACO Plat problem.
+
+### Problem 1. Tickets
+
+This problem is extremely similar to the previous codeforces problem, in some ways even easier as you don’t have to worry about the two different queries, this problem is completely even with the extra query type.
+
+Where this problem is different is in incorporating dijkstra, but it’s intuitive to run dijkstra a second time to find out the min distance to every node.
+
+Another very annoying thing is in setting up the graph for the second dijkstra, which we need to add edges that connects a node to the final answer node, including the distance from 1 to n. But keep in mind that we can only operate on actual nodes and tickets, not the segment tree nodes. This makes us have to limit the initial setup of the tree, from 1-n(actual nodes), and t-k(tickets). See code for details.
+
+ [p-1-after.cpp](../USACO/2021-dec/p-1-after.cpp) 
+
+ 

@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/michael/Nutstore Files/Documents/比赛/codeforces/contest/1517/B.cpp
+iostream
+-
+algorithm
+-
+vector
+-
+

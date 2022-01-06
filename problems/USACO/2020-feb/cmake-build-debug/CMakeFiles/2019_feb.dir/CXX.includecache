@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/michael/Documents/比赛/USACO/真题/2020-feb/s-3-redo.cpp
+iostream
+-
+fstream
+-
+string
+-
+cstring
+-
+queue
+-
+cmath
+-
+map
+-
+set
+-
+algorithm
+-
+

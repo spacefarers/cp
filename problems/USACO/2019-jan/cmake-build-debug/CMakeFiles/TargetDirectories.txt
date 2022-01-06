@@ -1,0 +1,3 @@
+/Users/michael/Documents/比赛/USACO/真题/2019-jan/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/michael/Documents/比赛/USACO/真题/2019-jan/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/michael/Documents/比赛/USACO/真题/2019-jan/cmake-build-debug/CMakeFiles/2019_jan.dir
