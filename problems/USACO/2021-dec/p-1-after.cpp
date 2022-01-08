@@ -2,6 +2,7 @@
 // Created by michaelyang on 00:48 Dec 24 2021.
 // Problem: Problem 1. Tickets
 // Related Problem: codeforces/787/D
+// segment tree on graphs
 
 #include <iostream>
 #include <vector>

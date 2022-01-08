@@ -1,21 +1,26 @@
-// created on 2021/7/10 by spacefarers
-// problem: Range Update Queries
-// Sum Segment Tree Template
-// 和线段树模板
+//
+// Created by michaelyang on 10:57 PM Jan 07 2022.
+// Problem: Polynomial Queries
+// Unfinished
 
 #include <iostream>
 #include <vector>
-#include <cstring>
 #include <algorithm>
+#include <cstring>
+#include <queue>
+#include <set>
+#include <map>
 
-#define ll long long
 #define f first
 #define s second
+#define fastio ios::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+
+typedef long long ll;
 
 using namespace std;
 
 const int MOD=1e9+7;
-const int N=2e5+5;
+const int N=1e5+5;
 
 ll tree[4*N],inputs[N];
 ll lazy[4*N];
@@ -52,7 +57,7 @@ void update_tree(int l,int r,ll c,int v=1,int tl=1,int tr=n){
 	}
 	int m=(tr+tl)/2;
 	update_tree(l,r,c,v*2,tl,m);
-	update_tree(l,r,c,v*2+1,m+1,tr);
+	update_tree(l,r,c+(m-tl),v*2+1,m+1,tr);
 	tree[v]=tree[v*2]+tree[v*2+1];
 }
 
@@ -65,23 +70,20 @@ ll get_sum(int l,int r,int v=1,int tl=1,int tr=n){
 }
 
 int main(){
-    int q;
-    cin>>n>>q;
-    for (int i=1;i<=n;i++){
-        cin>>inputs[i];
-    }
-    build_tree();
-    for (int i=0;i<q;i++){
-        int a;
-        cin>>a;
-        if (a==1){
-            int b,c,d;
-            cin>>b>>c>>d;
-            update_tree(b,c,d);
-        } else {
-            int b;
-            cin>>b;
-            cout<<get_sum(b,b)<<endl;
-        }
-    }
+	fastio
+	int q;
+	cin>>n>>q;
+	for (int i=1;i<=n;i++){
+		cin>>inputs[i];
+	}
+	build_tree();
+	for (int i=0;i<q;i++){
+		int x,a,b;
+		cin>>x>>a>>b;
+		if (x==1){
+			update_tree(a,b,1);
+		} else {
+			cout<<get_sum(a,b)<<endl;
+		}
+	}
 }

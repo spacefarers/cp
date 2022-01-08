@@ -3,4 +3,4 @@ project(contest)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(GoodluckSolvingProblems problems/codeforces/1619/E.cpp)
+add_executable(GoodluckSolvingProblems problems/cses/1736.cpp)
