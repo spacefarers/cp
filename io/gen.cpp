@@ -1,5 +1,5 @@
 // generating a random sequence of distinct elements
-
+#include "testlib.h"
 #include <iostream>
 #include <random>
 
